@@ -1,0 +1,267 @@
+/* ========================================================== */
+/* STYLES GÉNÉRAUX & RESET */
+/* ========================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuration du comportement global du site */
+html {
+    scroll-behavior: smooth; /* Permet un défilement fluide et élégant lors du clic sur le menu */
+}
+
+body {
+    background-color: #0f172a; /* Fond bleu nuit "cyber" */
+    color: #f8fafc; /* Texte blanc cassé */
+    font-family: 'Inter', sans-serif;
+    padding-top: 80px; /* Évite que le menu fixe ne cache le haut de tes sections */
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ========================================================== */
+/* BARRE DE NAVIGATION (NAVBAR) & LOGO NAV */
+/* ========================================================== */
+.navbar {
+    position: fixed; /* Reste collé en haut de l'écran pendant le défilement */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #020617; /* Fond noir profond */
+    border-bottom: 1px solid #1e293b; /* Petite ligne de séparation moderne */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000; /* S'assure que le menu passe au-dessus de tout le reste */
+}
+
+.logo {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: #38bdf8; /* Couleur accentuée bleu clair */
+}
+
+/* Ajustement du mini logo dans la barre de navigation */
+.nav-logo-mini {
+    height: 30px;              /* Hauteur parfaite et discrète */
+    width: auto;               /* Garde le bon ratio sans déformer */
+    vertical-align: middle;
+    margin-right: 12px;        /* Donne de l'espace avec le texte "Omar.SaaS" */
+}
+
+/* Liens du menu sur ordinateur */
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #38bdf8; /* Change de couleur au survol */
+}
+
+/* BOUTON BURGER (Caché par défaut sur grand écran) */
+.burger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Les 3 barres horizontales du burger */
+.burger-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: #f8fafc;
+    border-radius: 2px;
+}
+
+/* ========================================================== */
+/* SECTIONS & CONTENU DE L'ACCUEIL */
+/* ========================================================== */
+.section {
+    padding: 100px 0; /* Espacement interne pour aérer chaque partie */
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.bg-dark {
+    background-color: #0b1120; /* Alternance de couleur de fond pour casser la monotonie */
+}
+
+.hero .container {
+    text-align: center; /* Centre le contenu de l'accueil */
+}
+
+.hero h1 {
+    font-size: 65px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+/* Ajustement du logo d'accueil (Avatar) */
+.hero-avatar-mini {
+    max-width: 120px;          /* Empêche le logo de devenir géant */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;  /* Centre l'image et l'écarte du titre */
+}
+
+h2 {
+    font-size: 36px;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 40px;
+    border-left: 5px solid #38bdf8;
+    padding-left: 15px;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+strong {
+    color: #38bdf8;
+}
+
+/* ========================================================== */
+/* STYLE DU LOGO DE STAGE (ENTREPRISE) */
+/* ========================================================== */
+.img-logo-stage {
+    max-width: 160px;          /* Ajustement de la taille du logo PC SERVICE IDF */
+    height: auto;
+    display: block;
+    margin: 0 auto 25px auto;  /* Centre le logo et ajoute un espace avec la carte */
+    background-color: #ffffff; /* Ajoute un fond blanc propre si l'image a des transparences */
+    padding: 10px;
+    border-radius: 8px;        /* Bords légèrement arrondis modernisés */
+    border: 1px solid #1e293b;
+}
+
+/* ========================================================== */
+/* STYLE ET GRILLE DES SITES VITRINES (PROJETS PERSO) */
+/* ========================================================== */
+.projets-grid {
+    display: flex;
+    gap: 20px;                 /* Crée un espace uniforme de 20px entre tes 3 cartes */
+    flex-wrap: wrap;           /* Permet aux cartes de passer à la ligne proprement sur mobile */
+    margin-top: 30px;
+    width: 100%;
+}
+
+.card-projet {
+    flex: 1;
+    min-width: 280px;          /* Taille minimale d'une carte avant de se réorganiser */
+    text-align: center;        /* Centre le texte et l'image à l'intérieur de la carte */
+}
+
+/* Ajustement des logos de tes projets */
+.img-logo-projet {
+    max-height: 60px;          /* Fixe une hauteur maximale harmonieuse pour tous les logos de projets */
+    width: auto;
+    display: block;
+    margin: 0 auto 20px auto;  /* Centre horizontalement l'image dans la carte */
+    object-fit: contain;       /* Évite la distorsion des images */
+}
+
+/* ========================================================== */
+/* BOÎTES DE CONTENU (CARDS) & HOVER EFFECTS */
+/* ========================================================== */
+.card {
+    background-color: #020617;
+    border: 1px solid #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    transition: 0.2s;          /* Animation fluide de 0.2 seconde lors du survol */
+}
+
+/* Comportement au survol de la souris */
+.card:hover {
+    transform: translateY(-4px); /* Soulève discrètement la boîte */
+    border-color: #38bdf8;       /* Illumine la bordure en bleu cyan */
+}
+
+/* Classe pour la carte importante (Pivot QA) */
+.highlight-card {
+    border-color: #38bdf8;
+}
+
+/* FOOTER */
+.site-footer {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #020617;
+    border-top: 1px solid #1e293b;
+}
+
+/* ========================================================== */
+/* RESPONSIVE DESIGN (MODE SMARTPHONE / MOBILE) */
+/* ========================================================== */
+@media (max-width: 768px) {
+    .burger-btn {
+        display: flex; /* On affiche le bouton burger */
+    }
+
+    /* Transformation du menu classique en menu mobile déroulant */
+    .nav-menu {
+        display: none; /* Masqué par défaut sur mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #020617;
+        border-bottom: 1px solid #1e293b;
+        padding: 30px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    /* Classe activée par le JavaScript pour ouvrir le menu */
+    .nav-menu.open {
+        display: flex; 
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+}

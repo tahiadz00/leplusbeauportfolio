@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Omar Bouali</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="postyle.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="images_portfolio/logo.png" alt="" class="nav-logo-mini"> Omar<span>.SaaS</span>
+        </div>
+        
+        <nav class="nav-menu" id="navMenu">
+            <a href="#accueil" class="nav-link">Accueil</a>
+            <a href="#parcours" class="nav-link">Parcours</a>
+            <a href="#stage" class="nav-link">Stage</a>
+            <a href="#projet" class="nav-link">Projet SAV</a>
+            <a href="#projets" class="nav-link">Projets Perso</a>
+            <a href="#veille" class="nav-link">Veille</a>
+        </nav>
+
+        <button class="burger-btn" id="burgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <section id="accueil" class="section hero">
+        <div class="container">
+            <img src="images_portfolio/bg.png" alt="Photo de Omar Bouali" class="hero-avatar-mini">
+            <h1>Bouali <span>Omar</span></h1>
+            <p class="subtitle">BTS SIO Option SLAM — IPSSI</p>
+            <p>Développeur Web & Analyste Assurance Qualité (Q.A.) spécialisé dans les solutions SaaS.</p>
+        </div>
+    </section>
+
+    <section id="parcours" class="section">
+        <div class="container">
+            <h2>Mon Parcours</h2>
+            <div class="card">
+                <p><strong>2022 :</strong> Obtention du Baccalauréat STMG (Sciences et Technologies de la Gestion).</p>
+                <p><strong>2022 — 2024 :</strong> Expérience dans le monde du travail (Développement de l'autonomie et de la posture professionnelle).</p>
+                <p><strong>2025 :</strong> Entrée à l'<strong>IPSSI</strong> pour préparer le BTS SIO Option SLAM et début de l'apprentissage des bases du Web (HTML, CSS, JavaScript).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="stage" class="section bg-dark">
+        <div class="container">
+            <h2>Le Stage : PC SERVICE IDF</h2>
+            
+            <img src="images_portfolio/logo entreprise.jpg" alt="Logo PC SERVICE IDF" class="img-logo-stage">
+            
+            <div class="card">
+                <p><strong>Mode de travail :</strong> Télétravail / Distanciel complet.</p>
+                <p><strong>Méthodologie :</strong> Réunions quotidiennes sur Discord, suivi des tâches et gestion de projet.</p>
+                <p><strong>Compétences clés développées :</strong> Autonomie totale, gestion rigoureuse du temps et travail collaboratif via Git.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projet" class="section">
+        <div class="container">
+            <h2>Projet : Outil SAV SaaS</h2>
+            <div class="card highlight-card">
+                <h3>Le Défi Initial & Le Pivot Q.A.</h3>
+                <p>L'objectif était de concevoir une application de gestion de tickets d'incidents destinée à la commercialisation (Stack: React.js, PHP, MySQL).</p>
+                <p>Face à la complexité du code source et aux contraintes de temps d'un projet de niveau professionnel, mon tuteur m'a repositionné sur un rôle crucial de <strong>Testeur Q.A. (Assurance Qualité)</strong>.</p>
+            </div>
+            <div class="card">
+                <h3>Mes Réalisations en Qualité</h3>
+                <p><strong>Tests Fonctionnels :</strong> Validation complète des processus de création et de traitement des tickets.</p>
+                <p><strong>Tests de non-régression :</strong> Garantie que les modifications de code n'impactent pas l'existant.</p>
+                <p><strong>Résultat :</strong> Un produit fiable, documenté et 100% sécurisé pour sa future mise sur le marché.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="section">
+        <div class="container">
+            <h2>Mes Projets Personnels (Sites Vitrines)</h2>
+            <div class="projets-grid">
+                
+                <div class="card card-projet">
+                    <img src="images_portfolio/logoboutiqueenligne.png" alt="" class="img-logo-projet">
+                    <h3>Site Vitrine E-Commerce</h3>
+                    <p>Conception d'une interface vitrine pour une boutique en ligne, mettant en valeur un catalogue de produits.</p>
+                </div>
+
+                <div class="card card-projet">
+                    <img src="images_portfolio/logoortho.png" alt="" class="img-logo-projet">
+                    <h3>Site Vitrine Orthophonie</h3>
+                    <p>Création d'un site vitrine de présentation pour un cabinet d'orthophonie, axé sur la clarté des informations.</p>
+                </div>
+
+                <div class="card card-projet">
+                    <img src="images_portfolio/logo.png" alt="" class="img-logo-projet">
+                    <h3>Site Vitrine TacoFiesta</h3>
+                    <p>Développement d'un site vitrine dynamique pour un restaurant mexicain, présentant la carte et les menus.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="veille" class="section bg-dark">
+        <div class="container">
+            <h2>Veille Technologique</h2>
+            <div class="card">
+                <h3>Sujet : L'impact de l'IA sur la Qualité Logicielle</h3>
+                <p>Étude de l'automatisation des tests et de la détection prédictive des bugs informatiques par l'intelligence artificielle.</p>
+                <p><strong>Outils de suivi :</strong> Agrégation de flux RSS via Feedly, veille active sur Developpez.com et LinkedIn.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 — Portfolio Pro - Bouali Omar. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
